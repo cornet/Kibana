@@ -4,6 +4,7 @@ require 'bundler/capistrano'
 
 set :application, "kibana"
 set :repository,  "git@github.com:cornet/Kibana.git"
+set :branch       "kibana-ruby"
 
 set :scm, :git
 
@@ -41,4 +42,3 @@ namespace :deploy do
     run "god stop kibana"
   end
 end
-
