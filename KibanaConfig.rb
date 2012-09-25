@@ -2,7 +2,7 @@ module KibanaConfig
   # Your elastic search server(s). This may be set as an array for round robin
   # load balancing
   # Elasticsearch = ["elasticsearch1:9200","elasticsearch2:9200"]
-  Elasticsearch = "localhost:9200"
+  Elasticsearch = ['10.80.0.138:9200','10.80.0.110:9200','10.80.1.34:9200']
 
   # The port Kibana should listen on
   KibanaPort = 5601
@@ -23,7 +23,7 @@ module KibanaConfig
   # Otherwise, set a timezone string
   # Examples: 'UTC', 'America/Phoenix', 'Europe/Athens', MST
   # You can use `date +%Z` on linux to get your timezone string
-  Timezone = 'user'
+  Timezone = 'Europe/London'
 
   # Format for timestamps. Defaults to mm/dd HH:MM:ss.
   # For syntax see: http://blog.stevenlevithan.com/archives/date-time-format
@@ -73,7 +73,7 @@ module KibanaConfig
   # You can define your custom pattern here for index names if you 
   # use something other than daily indexing. Pattern needs to have 
   # date formatting like '%Y.%m.%d'
-  Smart_index_pattern = 'logstash-%Y.%m.%d'
+  Smart_index_pattern = 'logs-%Y-%m-%d'
   
   # ElasticSearch has a default limit on URL size for REST calls,
   # so Kibana will fall back to _all if a search spans too many
