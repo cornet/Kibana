@@ -2,7 +2,7 @@ module KibanaConfig
   # Your elastic search server(s). This may be set as an array for round robin
   # load balancing
   # Elasticsearch = ["elasticsearch1:9200","elasticsearch2:9200"]
-  Elasticsearch = ['10.80.0.138:9200','10.80.0.110:9200','10.80.1.34:9200']
+  Elasticsearch = ['10.80.0.110:9200','10.80.1.34:9200']
 
   # The port Kibana should listen on
   KibanaPort = 5601
