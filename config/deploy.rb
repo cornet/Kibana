@@ -26,6 +26,9 @@ set :deploy_to, "/var/www/apps/kibana"
 
 ssh_options[:forward_agent] = true
 
+# Don't touch asset files
+set :normalize_asset_timestamps, false
+
 # Unicorn control tasks
 namespace :deploy do
   task :restart do
