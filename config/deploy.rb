@@ -4,7 +4,7 @@ require 'bundler/capistrano'
 
 set :application, "kibana"
 set :repository,  "git@github.com:cornet/Kibana.git"
-set :branch       "kibana-ruby"
+set :branch,      "kibana-ruby"
 
 set :scm, :git
 
